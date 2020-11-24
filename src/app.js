@@ -7,8 +7,8 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 
 // mongoose connect 
-const usuario = 'devhouse'
-const pw = "devhouse";
+const usuario = ''
+const pw = '';
 
 class App {
   constructor() {
@@ -17,7 +17,7 @@ class App {
 
     // conectando DB;
     mongoose.connect(
-      `mongodb+srv://devhouse:${pw}@nodeexpress.hkt1q.mongodb.net/devhouse?retryWrites=true&w=majority`,
+      `mongodb+srv://devhouse:${pw}@nodeexpress.hkt1q.mongodb.net/${usuario}?retryWrites=true&w=majority`,
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
